@@ -1,9 +1,26 @@
 # React + Vite + TypeScript + TailwindCSS Template
 
-This is a minimal starter template for web applications, combining:
 
-* **Vite**: A fast and modern build tool.
-* **React**: A popular library for building user interfaces.
-* **TypeScript**: A typed superset of JavaScript for code reliability.
-* **TailwindCSS**: A utility-first CSS framework for rapid design (configured via `@tailwindcss/vite`).
-* **ESLint**: Configured for TypeScript, React Hooks, and React Refresh to ensure code quality.
+
+## How to Run the Project
+
+Follow these steps to set up and run the project locally:
+
+### Clone the repository
+```bash
+git clone https://github.com/oket23/React_Home_6
+cd react_app # Or your project's root directory
+```
+
+### Install dependencies
+Make sure you have Node.js (v18 or higher) installed.
+Then run:
+```bash
+npm install
+```
+
+### Start the development server
+```bash
+npm run dev
+```
+Once it’s running, open your browser and visit the local URL provided in your terminal (usually http://localhost:5173/).
