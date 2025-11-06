@@ -1,12 +1,7 @@
-import MainLayout from "./ui/main-layout/MainLayout.tsx";
+import HelloText from "@/components/HelloText.tsx";
 
-function App() {
-
-    return (
-    <MainLayout>
-        <h1>Hello developer!</h1>
-    </MainLayout>
-
-    )
+export default function App() {
+	return (
+    <HelloText text="React" isRed={true}/>
+	)
 }
-export default App
