@@ -1,4 +1,5 @@
-# React + Vite + TypeScript
+# React + Vite + TypeScript + TailwindCSS + Alias Template
+
 
 ## How to Run the Project
 
