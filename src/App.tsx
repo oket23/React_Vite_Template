@@ -1,11 +1,21 @@
-import HelloText from "@/components/HelloText.tsx";
-import MainLayout from "@/ui/main-layout/MainLayout.tsx";
+import {Route, type RouteObject, Routes} from "react-router";
+import {RouterEnum} from "@/config/RouterEnum.tsx";
+import Main from "@/screens/main/Main.tsx";
+import Providers from "@/providers/Providers.tsx";
 
 export default function App() {
-	return (
-        <MainLayout>
-            <HelloText text="React" isRed={true}/>
-        </MainLayout>
 
+    const routes: Array<RouteObject> = [
+        {path: RouterEnum.MAIN, element: <Main/>},
+    ]
+
+	return (
+        <Providers>
+            <Routes>
+                {routes.map((route, index) => (
+                    <Route key={index} path={route.path} element={route.element}/>
+                ))}
+            </Routes>
+        </Providers>
 	)
 }
